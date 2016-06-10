@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'hell_guardians_web.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iaGVsbF9ndWFyZGlhbnNfd2ViLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPmhlbGxfZ3VhcmRpYW5zX3dlYjwvdGl0bGU+DQogICAgPHZlbmRvcj5iYWRhYnVtMDA3PC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPmhlbGxfZ3VhcmRpYW5zPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJoZWxsX2d1YXJkaWFuc193ZWIuamFyIiBzaXplPSIyNzM2MSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjY0MCIgaGVpZ2h0PSI0ODAiIG1haW4tY2xhc3M9ImNvbS5iYWRhYnVtMDA3LmhlbGxfZ3VhcmRpYW5zX3dlYi5NYWluR2FtZU1lbnUiICBuYW1lPSJoZWxsX2d1YXJkaWFucyIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYmFja2dyb3VuZCIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedfxApplication() {
+        dtjava.embed(
+            {
+                id : 'fxApplication',
+                url : 'hell_guardians_web.jnlp',
+                placeholder : 'hell_guardians',
+                width : '640',
+                height : '480',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iaGVsbF9ndWFyZGlhbnNfd2ViLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPmhlbGxfZ3VhcmRpYW5zX3dlYjwvdGl0bGU+DQogICAgPHZlbmRvcj5iYWRhYnVtMDA3PC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPmhlbGxfZ3VhcmRpYW5zPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJoZWxsX2d1YXJkaWFuc193ZWIuamFyIiBzaXplPSIyNzM2MSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjY0MCIgaGVpZ2h0PSI0ODAiIG1haW4tY2xhc3M9ImNvbS5iYWRhYnVtMDA3LmhlbGxfZ3VhcmRpYW5zX3dlYi5NYWluR2FtZU1lbnUiICBuYW1lPSJoZWxsX2d1YXJkaWFucyIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYmFja2dyb3VuZCIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedfxApplication);
+</script>
+
+</head><body>
+<h2>Test page for <b>hell_guardians</b></h2>
+  <b>Webstart:</b> <a href='hell_guardians_web.jnlp' onclick="return launchApplication('hell_guardians_web.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='hell_guardians'></div>
+</body></html>
